@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Latihan elemen box model</title>
+	<link rel="stylesheet" type="text/css" href="latihanelemenboxmodel.css">
+</head>
+<body>
+<!-- 
+MARGIN  
+- overlapping margin(dua margin saling bertemu)
+	- di kasus ini yang bertemu adalah margin bottom class satu dan margin top class dua    (kasus vertikal), hasilnya untuk kasus vertikal ini margin itu tidak saling menambahkan, jadi margin yang diambil adalah margin yang paling besar ukurannya.
+	- untuk yang horizontal, elemennya di ke sebelah kanankan dengan mengubah display div menjadi inline-block agar ukurannya bisa diatur. Jika menggunakan inline-block ada margin yang terbuat otomatis jika elemen html menggunakan spasi/enter. overlapping horizontal ini akan dijumlahkan margin kiri dan kanannya(berlaku utuk inline dan inline-block)
+- negatif margin
+	margin itu bisa kita kasih niai negatif
+	negatif akan membuat margin bergerak berlawanan arah
+	bisa digunakan untuk menyembunyikan elemen
+- auto
+	adalah nilai yang bisa kita beri ke margin khusus untuk margin kiri dan kanan
+	auto ini akan membuat elemen berada ditengah-tengah parent nya
+- shorthand
+	menyingkat penulisan margin
+-->
+
+<div class="satu">1</div><div class="dua">2</div>
+<br><br><br><br>
+
+<div class="empat">4</div>
+<div class="lima">5</div>
+<br><br><br><br>
+
+<div class="tujuh">7</div>
+<div class="delapan">8</div>
+<br><br><br><br>
+
+<div class="sembilan">9</div>
+
+
+<!-- 
+PADDING 
+	shorthand nya sama seperti margin
+	bedanya dengan margin yaitu : 
+		- padding tidak bisa diberi nilai negatif
+		- padding tidak punya nilai auto
+		- padding mempengaruhi(menambah) ukuran box yang kita buat, jadi jika kita membuat padding maka kita harus mengubah kembali width(lebar) dan height(tinggi) yang kita buat
+ -->
+
+ <!-- 
+ BORDER 
+ 	cara penulisannya :
+ 		border: width style color;
+ 		atau bisa juga ditulis 1 persatu
+ 		atau bisa menuliskan hanya 1 sisi
+ 	style border terdiri dari
+ 		solid, dotted, dashed, double
+	border juga mempengaruhi(menambah) ukuran box
+-->
+
+<!-- TOTAL DIMENSI/ UKURAN BOX RUMUSNYA :
+	WIDTH/HEIGHT+PADDING+BORDER
+	untuk mengatasinya bisa menggunakan properti baru di css yaitu BOX SIZING(jadi berfungsi untuk mengatur dimensi dari kotak/box)
+
+	Jika kita membuat elemen sebaiknya yang diatur dimensinya hanya width nya saja tidak dengan height, biarkan height nya mengikuti elemen yang kita buat.
+ -->
+
+
+<div class="sepuluh">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+</body>
+</html>
